@@ -7,17 +7,30 @@
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    background-color: #ECCEAE;
+}
+
+.main-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10%;
+}
+
 .container {
     position: absolute;
-    top: 100px;
+    /* margin-top: 300px; */
     max-width: 350px;
     width: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: aqua;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    background-color: #131842;
     color: black;
     padding: 10px 20px;
     border-radius: 5px;
+    color: #FBF6E2;
 }
 
 .input-container {
@@ -27,3 +40,58 @@
     margin-top: 7px;
 }
 
+#list-container {
+    margin-top: 8px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 20px;
+    /* user-select: none; */
+    cursor: pointer;
+}
+
+.input-container {
+    margin-top: 25px;
+}
+
+.heading-one {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+
+.icon-image {
+    width: 50px;
+}
+
+.heading {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 500;
+    color: #E68369;
+}
+
+.input-container input {
+    border: 1px none red;
+    outline: none;
+    background-color: #FBF6E2;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    color: #131842;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.input-container button {
+    background-color: #131842;
+    color: #ECCEAE;
+    border: 1px solid #E68369;
+    border-radius: 10px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.9px;
+}
