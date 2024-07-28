@@ -47,9 +47,24 @@ body {
 ul li {
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 20px;
+    padding: 12px 8px 12px 35px;
     /* user-select: none; */
     cursor: pointer;
+    position: relative;
+    font-size: 19px;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 17px;
+    left: 8px;
 }
 
 .input-container {
@@ -94,4 +109,27 @@ ul li {
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 0.9px;
+}
+
+ul li.checked {
+    color: #ECCEAE;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #ECCEAE;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
 }
